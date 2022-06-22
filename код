@@ -1,0 +1,55 @@
+\documentclass[12pt]{article}
+\setcounter{page}{75} 
+
+\usepackage[left=3cm,right=3cm,top=3cm,bottom=3cm]{geometry}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{ucs}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{subcaption}
+\usepackage{ragged2e}
+
+\RaggedRight
+\begin{document}
+    
+    \paragraph{\S 2.3. ВЕЩЕСТВЕННЫЕ ЧАСТОТНЫЕ ХАРАКТЕРИСТИКИ}
+    \begin{flushright}
+    Т\,а\,б\,л\,и\,ц\,а  3
+    \end{flushright}
+    
+    \begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|}
+        \hline
+        $\omega$, сек^-1 & 0 & 5 & 7 & 10 & 20 & 30 & 40 & 50 & 60 & $\infty$  \\ 
+        \hline
+        $A(\omega)$ & $\infty$ & 3,56 & 2,34 & 1,41 & 0,448 & 0,211 & 0,121 & 0,078 & 0,054 & 0 \\
+        $\varphy(\omega)$, град & -90 & -116 & -125 & -135 & -154 & -162 & -166 & -169 & -170 & -180 \\
+        \hline 
+    \end{tabular} 
+    
+получаемой из формулы (6) при подстановке 
+    
+    \begin{center}
+        $U^2(\omega)+V^2(\omega)=A^2(\omega)$ b $U(\omega)=A(\omega)cos\varphy(\omega)$
+    \end{center}
+    
+    \hspace*{10mm}
+в) Если имеется амплитудно-фазовая характеристика разомкнутой системы, то для построения $P(\omega)$ удобно использовать формулу
+    
+    \begin{center}
+        $P(\omega)=\frac{A^2(\omega)+u(\omega)}{B^2(\omega)}$, (8)
+    \end{center}
+
+получающуюся из (6) при подстановке $A^2(\omega)=U^2(\omega)+V^2(\omega)$ и $B^2(\omega)=[1+U(\omega)]^2+V^2(\omega)$. Величины $A(\omega)$
+    
+    \begin{figure}[H]
+        \centering
+        \includegraphics[scale=0.7]{01.jpg} \\
+        \small{Рис. 55. Вещественная частотная характеристика к задаче 76.}
+    \end{figure}
+    
+и $B(\omega)$ для каждой заданной частоты $\omega$ легко получить из амплитудно-фазовой характеристики, так как $A(\omega)$  
+
+\end{document}
